@@ -1,0 +1,53 @@
+{
+  "name": "omen-messenger",
+  "version": "1.0.0",
+  "description": "The open source cross-platform all-in-one messaging, call and file sharing platform which actually cares about privacy and security. ",
+  "main": "./main.js",
+  "build": {
+    "appId": "omen.messenger",
+    "mac": {
+      "category": "public.app-category.social-networking",
+      "icon": "app/build/icon.icns"
+    },
+    "win": {
+      "target": "NSIS",
+      "icon": "app/build/icon.ico"
+    },
+    "linux": {
+      "category": "Network",
+      "icon": "app/build/"
+    }
+  },
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "dist-win": "electron-builder --win"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/B-0-B-B-Y/omen-messenger"
+  },
+  "keywords": [
+    "omen",
+    "messenger",
+    "call",
+    "chat",
+    "secure",
+    "open-source",
+    "instant-messaging",
+    "electron",
+    "cross-platform"
+  ],
+  "author": "Bob Naydenov <bob.naydenov@hotmail.com>, Dan Foad <contact@danfoad.co.uk>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/B-0-B-B-Y/omen-messenger/issues"
+  },
+  "homepage": "https://github.com/B-0-B-B-Y/omen-messenger#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^2.0.3",
+    "electron-builder": "^19.52.1"
+  }
+}
