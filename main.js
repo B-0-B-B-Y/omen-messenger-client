@@ -15,7 +15,7 @@ function createWindow() {
         height: height * 0.65,
         width: width * 0.4,
         frame: false,
-        icon: path.join(__dirname, 'app/build/512x512.png'),
+        icon: path.join(__dirname, 'app/build/182x182.png'),
         transparent: false,
     })
 
