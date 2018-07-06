@@ -3,6 +3,19 @@
     src: url('../assets/font/deftone stylus.ttf') format("truetype");
 }
 
+@font-face {
+    font-family: "Berzerker";
+    src: url('../assets/font/Berzerker-Regular.ttf') format("truetype");
+}
+
+/**** GLOBAL CLASSES ****/
+.draggable {
+    -webkit-app-region: drag;
+}
+.no-drag {
+    -webkit-app-region: no-drag;
+}
+
 
 /**** GENERAL ****/
 * {
@@ -63,7 +76,7 @@ h1 {
   align-items: center;
 }
 .background h1 {
-  font-family: "Deftone";
+  font-family: "Berzerker";
   color: white;
   letter-spacing: 2px;
   text-align: center;
@@ -74,6 +87,11 @@ h1 {
   text-align: center;
   letter-spacing: 3px;
 }
+.background img {
+  margin: 20px 0;
+}
+
+/**** GET STARTED BUTTON ****/
 .btn-3 {
   background-color: #5A5B5E;
 }
