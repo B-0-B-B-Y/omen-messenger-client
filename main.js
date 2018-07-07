@@ -20,7 +20,7 @@ function createWindow() {
     })
 
     omenMainWindow.loadURL('file://' + __dirname + '/app/index.html')
-    omenMainWindow.openDevTools()
+    //omenMainWindow.openDevTools()
 }
 
 //app.on('ready', () => setTimeout(createWindow, 100))
