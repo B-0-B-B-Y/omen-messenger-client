@@ -28,19 +28,9 @@ buttonClose.addEventListener('click', function () {
   ipcRenderer.send('button-press-close', 'Close the app')
 })
 
-//Prevent menu bar from being selectable with mouse click + drag
-var unFocus = function () {
-    if (document.selection) {
-        document.selection.empty()
-    } else {
-        window.getSelection().removeAllRanges()
-    }
-}
-
-document.getElementById('menu').onmousemove = function () {
-    unFocus()
-}
-
-document.getElementById('menu').onmouseup = function () {
-    unFocus()
-}
+//Create Fade Out animation on logo on Get Started screen
+$(document).ready(function(){
+    $(".type-1").click(function(){
+        $("#logo").fadeOut()
+    })
+  })

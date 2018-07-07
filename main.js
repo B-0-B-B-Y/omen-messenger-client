@@ -19,7 +19,8 @@ function createWindow() {
         transparent: false,
     })
 
-    omenMainWindow.loadURL('file://' + __dirname + '/app/index.html');
+    omenMainWindow.loadURL('file://' + __dirname + '/app/index.html')
+    omenMainWindow.openDevTools()
 }
 
 //app.on('ready', () => setTimeout(createWindow, 100))
