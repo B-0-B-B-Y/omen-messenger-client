@@ -198,3 +198,7 @@ a .round i {
   text-align: center;
   letter-spacing: 3px;
 }
+#login {
+  border: none;
+  border-radius: 15px;
+}
