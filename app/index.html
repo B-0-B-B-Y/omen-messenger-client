@@ -11,6 +11,12 @@
           crossorigin="anonymous">
   </script>
   <script>if (window.module) module = window.module;</script>
+  <script type="text/javascript">
+    function resizeIframe(obj){
+       obj.style.height = 0;
+       obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+    }
+  </script>
 </head>
 
 <body>
@@ -30,6 +36,9 @@
       <div class="flex-column landing-page-container">
         <h1>OMEN</h1>
         <h3>MESSENGER</h3>
+        <div class="flex-column login-form">
+          <iframe src="assets/login-form/index.html" onload='resizeIframe(this)'></iframe>
+        </div>
         <img id="logo" src="assets/img/omen-logo-3.png"/>
         <div class="type-1">
           <div>

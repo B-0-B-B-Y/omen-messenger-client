@@ -107,10 +107,12 @@ h1 {
 
 /**** GET STARTED BUTTON ****/
 .btn-3 {
-  background-color: #5A5B5E;
+  background-color: #dd1a13;
+  /*#5A5B5E*/
 }
 .btn-3 .round {
-  background-color: #737478;
+  background-color: #963531;
+  /*#737478*/
 }
 a {
   text-decoration: none;
@@ -185,4 +187,14 @@ a .round i {
 .landing-page-container {
   padding: 2.5rem;
   background: rgba(0,0,0, 1);
+}
+
+/**** LOGIN CONTAINER ****/
+.login-form {
+  display: none;
+}
+.login-form h3 {
+  color: white;
+  text-align: center;
+  letter-spacing: 3px;
 }

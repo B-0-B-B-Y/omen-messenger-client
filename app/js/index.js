@@ -32,5 +32,7 @@ buttonClose.addEventListener('click', function () {
 $(document).ready(function(){
     $(".type-1").click(function(){
         $("#logo").fadeOut()
+        $(".type-1").fadeOut()
+        $(".login-form").delay(400).fadeIn()
     })
   })
