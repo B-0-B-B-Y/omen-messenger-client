@@ -15,6 +15,19 @@
 .no-drag {
     -webkit-app-region: no-drag;
 }
+.flex-column {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.flex-row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
 
 
 /**** GENERAL ****/
@@ -65,9 +78,10 @@ h1 {
   width: 100%;
   height: 100%;
   z-index: -10;
-  background-image:url('../assets/img/background.jpg');
+  background-color: black;
+  background-image:url('../assets/img/background-6.png');
   background-repeat:no-repeat;
-  background-size:cover;
+  background-size:contain;
   background-position:center;
   overflow: hidden;
   display: flex;
@@ -161,4 +175,14 @@ a .round i {
 }
 .type-1 a:hover .round i {
   left: 12%;
+}
+
+/**** LANDING PAGE CONTAINER ****/
+.outline {
+  border: solid red 2px;
+  border-radius: 8px;
+}
+.landing-page-container {
+  padding: 2.5rem;
+  background: rgba(0,0,0, 1);
 }
