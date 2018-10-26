@@ -45,9 +45,11 @@
     "url": "https://github.com/B-0-B-B-Y/omen-messenger/issues"
   },
   "homepage": "https://github.com/B-0-B-B-Y/omen-messenger#readme",
-  "dependencies": {},
+  "dependencies": {
+    "ajv": "^6.5.4"
+  },
   "devDependencies": {
-    "electron": "^2.0.3",
-    "electron-builder": "^19.52.1"
+    "electron": "latest",
+    "electron-builder": "latest"
   }
 }
