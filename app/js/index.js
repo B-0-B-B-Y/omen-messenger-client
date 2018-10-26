@@ -28,6 +28,11 @@ buttonClose.addEventListener('click', function () {
   ipcRenderer.send('button-press-close', 'Close the app')
 })
 
+//Setup Get Started button
+$('.btn-3').click(function () {
+  ipcRenderer.send('open-messenger', 'Open the main chat interface')
+})
+
 //Create Fade Out animation on logo on Get Started screen
 $(document).ready(function(){
     $(".type-1").click(function(){

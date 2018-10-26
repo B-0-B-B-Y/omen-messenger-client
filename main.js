@@ -20,7 +20,7 @@ function createWindow() {
     })
 
     omenMainWindow.loadURL('file://' + __dirname + '/app/index.html')
-    //omenMainWindow.openDevTools()
+    omenMainWindow.openDevTools()
 }
 
 //app.on('ready', () => setTimeout(createWindow, 100))
@@ -46,4 +46,8 @@ ipcMain.on('button-press-unmaximise', (event, arg) => {
 
 ipcMain.on('button-press-close', (event, arg) => {
   app.quit()
+})
+
+ipcMain.on('open-messenger', (event, arg) => {
+  omenMainWindow.loadURL('file://' + __dirname + '/app/chat_interface.html')
 })
