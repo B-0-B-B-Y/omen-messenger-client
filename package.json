@@ -46,7 +46,7 @@
   },
   "homepage": "https://github.com/B-0-B-B-Y/omen-messenger#readme",
   "dependencies": {
-    "ajv": "^6.5.4"
+    "ajv": "^6.12.3"
   },
   "devDependencies": {
     "electron": "latest",
